@@ -5,22 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciando HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Título Principal</h1>
+    <h1 id="tituloPrincipal">Título Principal</h1>
     <h2>Titulo 2</h2>
     <h3>Título 3</h3>
     <h4>Título 4</h4>
     <h5>Titulo 5</h5>
     <h6>Título 6</h6>
 
-    <p>Este es un párrafo de prueba. Veamos como lo interpreta el navegador</p>
+    <p id="pEjemplo">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur magni maxime, dicta aliquam dolorem, eligendi eaque repellat ab ducimus quisquam praesentium dolores libero quam necessitatibus nam laboriosam accusamus quibusdam?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur magni maxime, dicta aliquam dolorem, eligendi eaque repellat ab ducimus quisquam praesentium dolores libero quam necessitatibus nam laboriosam accusamus quibusdam?
+    </p>
+
+    <div class="pruebaTamanos">
+        <!--div class="pruebaOverflow"></div-->
+    </div>
+
+    <div class="modeloCaja">
+        Lorem ipsum dolor sit amet consectetur adipis
+    </div>
+
+    <p id="primerParrafo" class="parrafo">
+        Este es un párrafo de prueba. Veamos como lo interpreta el navegador. 
+        <strong class="str">Strong dentro de primer parrafo</strong>
+        <span class="str">Este es un spans</span>
+    </p>
+
+    <div id="divAbuela">
+        <p>Parrafo hijo de div abuela</p>
+        <input type="text" placeholder="Teléfono">
+        <div id="divPadre">
+            <p>Parrafo hijo de divPadre, NIETO divAbuela</p>
+        </div>
+        <h3>H3 color amarillo</h3>
+    </div>
+
+    <h2 id="idH2" class="tituloH2 claseUnica">Este es un título H2</h2>
+
+    <h3 class="tituloH2">Este es un título H3</h3>
 
     <a href="https://google.com" target="_blank">Enlace</a>
 
-    <p>
-        Este es mi segundo párrafo <strong>texto strong</strong> también tenemos <em>énfasis</em>
+    <p class="parrafo">
+        Este es mi segundo párrafo <strong class="str">texto strong</strong> también tenemos <em>énfasis</em>
     </p>
+
+    <strong>Texto Strong 2</strong>
 
     <h1>Lista desordenada</h1>
     <ul>
@@ -64,7 +100,7 @@
         </tr>
     </table>
 
-    <img src="img/gatito.jpg" alt="Imagen de Gatito">
+    <img id="imgGatito" src="img/gatito.jpg" alt="Imagen de Gatito">
 
     <div>
         <p>
@@ -74,16 +110,18 @@
 
     <form>
         <div>
-            <input type="text" name="inputTexto">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" name="nombreCompleto" id="nombre">
             <input type="number" name="inputNumeral">
             <input type="password" name="inputPassword">
             <input type="date" name="inputFecha">
             <input type="email" name="inputEmail">
+            <textarea name="inputTextarea"></textarea>
         </div>
         <div>
             <h3>Estado Civil</h3>
-            <input type="radio" name="estadoCivil" value="casado" id="casado">
-            <label for="casado">Casado</label>
+            <input type="radio" name="estadoCivil" value="casado" id="cas">
+            <label for="cas">Casado</label>
             <input type="radio" name="estadoCivil" value="soltero" id="soltero">
             <label for="soltero">Soltero</label>
         </div>

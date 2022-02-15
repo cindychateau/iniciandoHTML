@@ -1,0 +1,141 @@
+/* body {
+    background-color: red;
+} */
+
+h1 {
+  font-size: 90px;  
+  border: 1px solid black;
+  color: red;
+}
+
+#tituloPrincipal {
+    color: aqua;
+    font-size: 150px;
+}
+/* 
+p {
+    border: 1px solid rebeccapurple;
+} */
+
+.parrafo {
+    border: 2px dotted blue;
+    border-radius: 20px;
+}
+
+#primerParrafo {
+    border: 5px dotted red;
+}
+
+.colorAmarillo {
+    color: yellow;
+}
+
+#divAbuela {
+    border: 5px blue solid;
+    background-color: black;
+}
+
+#divPadre {
+    background-color: white;
+}
+
+#primerParrafo .str { /*elementoPadre .elementoHijo (Al que aplica el estilo es al elemento hijo)*/
+    color: brown;
+}
+
+#divAbuela > p { /*elementoPadre > elementoHijoDirecto (Al que aplica el estilo es al elemento hijo)*/
+    color: blue;
+}
+
+h3.tituloH2 {
+    font-style: italic;
+}
+
+.claseUnica.tituloH2 { /*que cumpla con ambos elementos*/
+    font-style: normal;
+}
+
+input[type="number"] {
+    width: 500px;
+}
+
+input[name="inputPassword"] {
+    padding: 30px;
+}
+
+#imgGatito:hover {
+    border: 1px solid black;
+}
+
+#divAbuela > p, textarea, input { /**/
+    background-color: blueviolet;
+}
+
+#divAbuela > p {
+    background-color: blueviolet;
+}
+
+textarea {
+    background-color: blueviolet;
+}
+
+#divAbuela input {
+    background-color: white;
+}
+
+#divAbuela input::placeholder{
+    font-style: italic;
+}
+
+/*COLOR*/
+ul {
+    background-color: rgb(255,0,0);
+    color: blue;
+    /*color: #0000ff*/
+}
+
+/*TEXTO*/
+#pEjemplo {
+    text-align: center; /*left, right, center, justify*/
+    text-decoration: underline; /*underline, line-though, none, overline*/
+    font-style: italic; /*italic, normal*/
+    font-weight: bold; /*normal, bold, light, 100, 200, 300, 900 - dependen del font*/
+    /*font-family: Arial, Helvetica, sans-serif; /*serif, monospace, cursive*/
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 10px; /*pt, em*/
+}
+
+/*TAMAÑO*/
+.pruebaTamanos {
+    background-color: blue;
+    width: 400px;
+    height: 600px;
+    overflow: hidden; /*hidden, scroll*/
+}
+
+.pruebaOverflow {
+    background-color: black;
+    width: 200px;
+    height: 800px;
+}
+
+/*BACKGROUND*/
+.pruebaTamanos {
+    border: 1px solid black;
+    background-color: blue;
+    background-image: url("../img/gatito_small.jpg");
+    background-repeat: no-repeat; /*no-repeat, repeat-x, repeat-y, repeat*/
+    background-size: auto; /*auto, cover->estirar la imagen para cubrir lo mejor al div, 100% ->100% del ancho*/
+}
+
+/*BOX MODEL*/
+.modeloCaja {
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
